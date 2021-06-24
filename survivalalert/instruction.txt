@@ -1,0 +1,64 @@
+npx create-react-app survivalalert;
+mkdir backend
+cd backend
+node init
+npm install express cors mongoose dotenv
+npm install -g nodemon
+
+frontend:
+npm install bootstrap
+ npm install react-router-dom
+ npm install react-bootstrap
+ npm install axios
+
+ npm i --save @devexpress/dx-react-core @devexpress/dx-react-grid
+ npm i --save @devexpress/dx-react-grid-material-ui
+ npm install @material-ui/core
+ npm i lodash
+ npm install react-bootstrap-table-next --save
+npm  install react-bootstrap-table2-filter --save
+npm install leaflet react-leaflet
+
+//=============================================leaflet exception
+./node_modules/@react-leaflet/core/esm/path.js 10:41
+Module parse failed: Unexpected token (10:41)
+File was processed with these loaders:
+ * ./node_modules/react-scripts/node_modules/babel-loader/lib/index.js
+You may need an additional loader to handle the result of these loaders.
+|   useEffect(function updatePathOptions() {
+|     if (props.pathOptions !== optionsRef.current) {
+>       const options = props.pathOptions ?? {};
+|       element.instance.setStyle(options);
+|       optionsRef.current = options;
+ 
+ It's because of the new version of the react-leaflet. 
+ Open your package.json file
+
+ "browserslist": {
+ "production": [
+  ">0.2%",
+  "not dead",
+  "not op_mini all"
+],
+"development": [
+  "last 1 chrome version",
+  "last 1 firefox version",
+  "last 1 safari version"
+]
+},
+Replace it with following lines :
+
+"browserslist": [
+">0.2%",
+"not dead",
+"not op_mini all"
+],
+Now Delete node_modeules/.cache folder
+
+npm install
+
+npm start
+//==========================================================
+
+npm install mobx --save
+npm install mobx-react --save

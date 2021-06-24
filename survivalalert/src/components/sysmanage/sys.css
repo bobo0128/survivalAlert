@@ -1,0 +1,71 @@
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table td {
+  border: 1px solid rgb(144, 159, 245);
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.react-bootstrap-table
+  > table
+  > thead
+  > tr
+  > th
+  .filter::-webkit-input-placeholder {
+  color: black;
+}
+
+table tr:nth-child(odd) {
+  background-color: #b2d4f5;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #aee90a2c;
+  color: white;
+  border: 1px solid rgb(144, 159, 245);
+}
+
+label {
+  padding: 8px 8px 8px 0;
+  display: inline-block;
+  color: rgb(17, 17, 16);
+}
+
+input[type="submit"] {
+  width: 10%;
+  background-color: #b2d4f5;
+  color: black;
+  padding: 8px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #8daddd;
+}
+
+.center {
+  margin: auto;
+  width: 20%;
+  color: rgb(233, 96, 96);
+  padding: 10px;
+}
