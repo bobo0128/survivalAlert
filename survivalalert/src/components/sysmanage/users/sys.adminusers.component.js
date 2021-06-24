@@ -157,18 +157,25 @@ export default class SysUsers extends Component {
         <div id="adduserDiv" style={{ display: "none" }}>
           <div className="centerForm">
             <form onSubmit={this.addUser}>
-              <div className="inputField">
-                <input name="username" type="text" className="input" required />
+              <div className="inputsm">
+                <input
+                  name="username"
+                  type="text"
+                  className="input"
+                  placeholder="Username"
+                  required
+                />
               </div>
-              <div className="inputField">
+              <div className="inputsm">
                 <input
                   name="password"
                   type="password"
                   className="input"
+                  placeholder="Password"
                   required
                 />
               </div>
-              <div className="inputField">
+              <div className="inputsm">
                 <Button classname="smallbtn" type="submit">
                   Submit
                 </Button>

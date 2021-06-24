@@ -38,7 +38,7 @@ html,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  background-color: #282c34;
   margin: 0;
   position: absolute;
   left: 50%;
@@ -61,6 +61,18 @@ html,
   padding: 12px;
   font-size: 14px;
   background: rgba(255, 255, 255, 1);
+}
+
+.inputsm {
+  box-sizing: border-box;
+  outline: none;
+  border: solid 2px rgb(21, 123, 240);
+  border-radius: 4px;
+  color: #292929;
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  background: rgb(21, 123, 240);
 }
 
 .submitButton {
